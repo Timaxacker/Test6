@@ -9,9 +9,14 @@ print(f'{tim2 + ale2 = }\n{tim2 - ale2 = }\n{tim2 / ale2 = }\n{tim2 * ale2 = }')
 
 import turtle as t
 from math import log
+from colorsys import hsv_to_rgb
 
-for i in range(100):
-    t.forward(log(i))
-    t.right(log(i))
+# t.tracer(0, 100)
+t.speed(1000)
+
+for i in range(10000):
+    t.color(hsv_to_rgb(i/1000, 1, 1))
+    t.forward(10)
+    t.right(i)
 
 t.mainloop()
