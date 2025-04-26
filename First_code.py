@@ -10,8 +10,10 @@ print(f'{tim2 + ale2 = }\n{tim2 - ale2 = }\n{tim2 / ale2 = }\n{tim2 * ale2 = }')
 import turtle as t
 from math import log
 
-for i in range(100):
-    t.forward(log(i))
-    t.right(log(i))
+t.speed(100)
+
+for i in range(1000000):
+    t.forward(40)
+    t.right(i)
 
 t.mainloop()
