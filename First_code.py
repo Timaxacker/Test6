@@ -20,5 +20,7 @@ while True:
     t.color(hsv_to_rgb(i/1000, 1, 1))
     t.forward(40)
     t.right(i)
+    t.up()
+    t.down()
     if i % 10 == 0:
         t.update()
