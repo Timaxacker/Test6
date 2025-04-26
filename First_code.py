@@ -11,12 +11,14 @@ import turtle as t
 from math import log
 from colorsys import hsv_to_rgb
 
-# t.tracer(0, 100)
+t.tracer(0, 0)
 t.speed(1000)
 
 for i in range(10000):
     t.color(hsv_to_rgb(i/1000, 1, 1))
-    t.forward(10)
+    t.forward(40)
     t.right(i)
+    if i % 10 == 0:
+        t.update()
 
 t.mainloop()
