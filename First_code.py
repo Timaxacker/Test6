@@ -16,7 +16,9 @@ t.speed(1000)
 
 for i in range(10000):
     t.color(hsv_to_rgb(i/1000, 1, 1))
-    t.forward(10)
+    t.forward(40)
     t.right(i)
+    t.up()
+    t.down()
 
 t.mainloop()
