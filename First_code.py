@@ -24,5 +24,3 @@ while True:
     t.down()
     if i % 10 == 0:
         t.update()
-
-t.mainloop()
