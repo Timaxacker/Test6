@@ -22,5 +22,3 @@ while True:
     t.right(i)
     if i % 10 == 0:
         t.update()
-
-t.mainloop()
